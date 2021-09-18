@@ -20,11 +20,13 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
       result[i] = tmp[i].split(',');
   }
   
-  alert(result[0][0]);
   alert(result[1][0]);
-  alert(result[2][0]);
 }
 
+let ticker = document.getElementsByClassName('form-select form-select-sm');
 
-getCSV(); //最初に実行される
+if(ticker = "VOO"){
+  getCSV();
+}
+
 
