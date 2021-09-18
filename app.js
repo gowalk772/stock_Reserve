@@ -24,6 +24,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 }
 
 let ticker = document.getElementsByClassName('form-select form-select-sm');
+alert(ticker);
 
 if(ticker = "VOO"){
   getCSV();
