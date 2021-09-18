@@ -1,3 +1,6 @@
+let ticker = document.getElementById('thick');
+alert(ticker);
+
 //CSVファイルを読み込む関数getCSV()の定義
 function getCSV(){
   let req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
@@ -23,8 +26,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   alert(result[1][0]);
 }
 
-let ticker = document.getElementById('thick');
-alert(ticker);
+
 
 if(ticker = "VOO"){
   getCSV();
