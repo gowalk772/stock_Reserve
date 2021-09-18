@@ -1,4 +1,4 @@
-let ticker = document.getElementById('thick');
+let ticker = document.getElementById('tick');
 alert(ticker);
 
 //CSVファイルを読み込む関数getCSV()の定義
