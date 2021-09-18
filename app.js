@@ -23,7 +23,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   alert(result[1][0]);
 }
 
-let ticker = document.getElementsByClassName('form-select form-select-sm');
+let ticker = document.getElementById('thick');
 alert(ticker);
 
 if(ticker = "VOO"){

@@ -31,64 +31,68 @@
     <div class="center-block">
       
 
-        <h1>株積立計算</h1>
-        <br>
-        <h5>ティッカー</h5>
-        <div class="col-auto">
-          <select class="form-select form-select-sm" aria-label=".form-select-lg example">
-            <option value="" hidden>選択してください</option>
-            <option value="1">VOO</option>
-            <option value="2">QQQ</option>
-          </select>
+      <h1>米国株積立計算</h1>
+      <br>
+      <div>
+        米国株を毎月決まった金額で積み立てたらいくらになるかを計算します。
+      </div>
+      <br>
+      <h5>ティッカー</h5>
+      <div class="col-auto">
+        <select id="thick" class="form-select form-select-sm" aria-label=".form-select-lg example">
+          <option value="" hidden>選択してください</option>
+          <option value="1">VOO</option>
+          <option value="2">QQQ</option>
+        </select>
+      </div>
+
+      <br>
+      <br>
+      <h5>積立開始年月</h5>
+      <div class="cp_ipselect cp_sl02">
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+          <option value="" hidden>選択してください</option>
+          <option value="1"></option>
+          <option value="2"></option>
+        </select>
+      </div>
+      <br>
+      <h5>積立終了年月</h5>
+      <div class="cp_ipselect cp_sl03">
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+          <option value="" hidden>選択してください</option>
+          <option value="1"></option>
+          <option value="2"></option>
+        </select>
+      </div>
+      <br>
+      <br>
+
+      <h5>積立金月額</h5>
+      <div class="input-group mb-3"></div>
+        <input type="number" class="form-control" step="0.1" value="5.0" min="0" max="1000">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">万円</span>
         </div>
 
         <br>
-        <br>
-        <h5>開始年月</h5>
-        <div class="cp_ipselect cp_sl02">
-          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-            <option value="" hidden>選択してください</option>
-            <option value="1">9</option>
-            <option value="2">8</option>
-          </select>
-        </div>
-        <br>
-        <h5>終了年月</h5>
-        <div class="cp_ipselect cp_sl03">
-          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-            <option value="" hidden>選択してください</option>
-            <option value="1">9</option>
-            <option value="2">8</option>
-          </select>
-        </div>
-        <br>
-        <br>
+        <a class="btn btn-primary" role="button">計算</a>
+      </div>
 
-        <h5>毎月積立金額</h5>
-        <div class="input-group mb-3"></div>
-          <input type="number" class="form-control" step="0.1" value="5.0" min="0" max="1000">
-          <div class="input-group-append">
-            <span class="input-group-text" id="basic-addon2">万円</span>
-          </div>
-
-          <br>
-          <a class="btn btn-primary" href="#" role="button">計算</a>
-        </div>
-
-        <br>
-        <br>
-        <h5>投資金額</h5>
-        <br>
-        <br>
-        <h5>評価額</h5>
-        <br>
-        <br>
-        <h5>税引き前利益</h5>
-        <br>
-        <br>
-        <h5>税引き後利益</h5>
-        <br>
-        <br>
+      <br>
+      <br>
+      <h5>投資金額</h5>
+      <br>
+      <br>
+      <h5>評価額</h5>
+      <br>
+      <br>
+      <h5>税引き前利益</h5>
+      <br>
+      <br>
+      <h5>税引き後利益</h5>
+      <br>
+      <br>
       
     </div>
   </div>
