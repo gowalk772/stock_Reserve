@@ -20,7 +20,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
       result[i] = tmp[i].split(',');
   }
 
-  alert(result[0][0]); // 300yen
+  alert(result[1][0]); // 300yen
 }
 
 
