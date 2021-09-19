@@ -28,7 +28,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 
 
 
-if(ticker = "QQQ"){
+if(ticker = "VOO"){
   getCSV();
 }
 
