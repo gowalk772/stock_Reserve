@@ -25,14 +25,14 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   alert(result[1][0]);
 }
 
-function clickBtn1(){
-	let ticker = document.getElementById("tick");
 
-	alert(ticker);
-  if(ticker = "VOO"){
-    getCSV();
-  }
+let ticker = document.getElementById("tick");
+ticker.onchange = function(){
+  alert(this.value);
+  getCSV();
 }
+
+    
 
 
 
