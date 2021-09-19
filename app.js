@@ -1,4 +1,5 @@
 
+
 //CSVファイルを読み込む関数getCSV()の定義
 function getCSV(){
   let req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
@@ -25,7 +26,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 }
 
 function clickBtn1(){
-	const str = document.getElementById("tick");
+	let ticker = document.getElementById("tick");
 
 	alert(ticker);
   if(ticker = "VOO"){
