@@ -1,5 +1,3 @@
-let ticker = document.getElementById('tick');
-alert(ticker);
 
 //CSVファイルを読み込む関数getCSV()の定義
 function getCSV(){
@@ -26,10 +24,14 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   alert(result[1][0]);
 }
 
+function clickBtn1(){
+	const str = document.getElementById("tick");
 
-
-if(ticker = "VOO"){
-  getCSV();
+	alert(ticker);
+  if(ticker = "VOO"){
+    getCSV();
+  }
 }
+
 
 
