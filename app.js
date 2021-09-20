@@ -1,9 +1,9 @@
 
 
 //CSVファイルを読み込む関数getCSV()の定義
-function getCSV(){
+function getCSV(symbol){
   let req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-  req.open("get", "VOO.csv", true); // アクセスするファイルを指定
+  req.open("get", symbol + ".csv", true); // アクセスするファイルを指定
   req.send(null); // HTTPリクエストの発行
 
   // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
@@ -25,14 +25,13 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   alert(result[1][0]);
 }
 
-
+// ティッカーシンボルを取得する
 let ticker = document.getElementById("tick");
 ticker.onchange = function(){
   alert(this.value);
-  getCSV();
+  getCSV(this.value);
 }
 
-    
 
 
 
