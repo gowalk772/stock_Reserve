@@ -31,6 +31,8 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
   startPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
   endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
+  startPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
+  endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
   
   alert(result[1][1]);
 }
