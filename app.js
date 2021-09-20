@@ -27,6 +27,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 
   const option = document.createElement('option'); //option要素を新しく作る
   option.value = result[1][0]; //option要素の値に、メニューを識別できる番号を指定する
+  option.text = result[1][0];
   //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
   startPeriod.appendChild(option); //セレクトボックスにoption要素を追加する
   endPeriod.appendChild(option); //セレクトボックスにoption要素を追加する
