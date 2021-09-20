@@ -25,7 +25,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   let startPeriod = document.getElementById("sPeriod"); //積立開始月
   let endPeriod = document.getElementById("ePeriod"); //積立開始月
 
-  const op = document.createElement('option'); //option要素を新しく作る
+  const op = document.createElement("option"); //option要素を新しく作る
   op.value = result[1][0]; //option要素の値に、メニューを識別できる番号を指定する
   op.text = result[1][0];
   //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
