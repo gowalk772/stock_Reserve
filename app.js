@@ -30,12 +30,8 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   op.text = result[1][0];
   //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
   startPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
-  let op = document.createElement("option"); //option要素を新しく作る
-  endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
-  let op = document.createElement("option"); //option要素を新しく作る
-  startPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
-  let op = document.createElement("option"); //option要素を新しく作る
-  endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
+
+  //endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
   
   alert(result[1][1]);
 }
