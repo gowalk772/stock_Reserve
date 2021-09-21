@@ -32,9 +32,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   opp.value = result[1][0]; //option要素の値に、メニューを識別できる番号を指定する
   opp.text = result[1][0];
   //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
-  startPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
-  endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
-  endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
+  startPeriod.append(op); //セレクトボックスにoption要素を追加する
   endPeriod.appendChild(op); //セレクトボックスにoption要素を追加する
   endPeriod.appendChild(opp); //セレクトボックスにoption要素を追加する
   
