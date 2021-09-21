@@ -38,7 +38,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   endPeriod.appendChild(op[0]); //セレクトボックスにoption要素を追加する
   endPeriod.appendChild(opp[0]); //セレクトボックスにoption要素を追加する
   
-  alert(result.Length);
+  alert(result.length);
 }
 
 // ティッカーシンボルを取得する
