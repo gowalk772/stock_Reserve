@@ -29,15 +29,16 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   op[0] = document.createElement("option"); //option要素を新しく作る
   op[0].value = result[1][0]; //option要素の値に、メニューを識別できる番号を指定する
   op[0].text = result[1][0];
-  let opp = document.createElement("option"); //option要素を新しく作る
-  opp.value = result[2][0]; //option要素の値に、メニューを識別できる番号を指定する
-  opp.text = result[2][0];
+  let opp = []
+  opp[0] = document.createElement("option"); //option要素を新しく作る
+  opp[0].value = result[2][0]; //option要素の値に、メニューを識別できる番号を指定する
+  opp[0].text = result[2][0];
   //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
   startPeriod.appendChild(op[0]); //セレクトボックスにoption要素を追加する
   endPeriod.appendChild(op[0]); //セレクトボックスにoption要素を追加する
-  endPeriod.appendChild(opp); //セレクトボックスにoption要素を追加する
+  endPeriod.appendChild(opp[0]); //セレクトボックスにoption要素を追加する
   
-  alert(result[1][1]);
+  alert(result.Length);
 }
 
 // ティッカーシンボルを取得する
