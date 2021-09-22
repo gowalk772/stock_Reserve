@@ -24,10 +24,13 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 
   let startPeriod = document.getElementById("sPeriod"); //積立開始月
   let endPeriod = document.getElementById("ePeriod"); //積立開始月
+  for (let i = startPeriod.length - 1; 0 <= i; --i) {
+    if(!is[i].selected) {
+      select.removeChild(is[i]);
+    }
+  }
 
   let op = []
-  op.length = 0;
-  alert(op.length);
   for(let i = 1; i < result.length-1; i++){
     op[i-1] = document.createElement("option"); //option要素を新しく作る
     op[i-1].value = result[i][0]; 
@@ -36,7 +39,6 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   }
   
   let opp = []
-  opp.length = 0;
   for(let i = 1; i < result.length-1; i++){
     opp[i-1] = document.createElement("option"); //option要素を新しく作る
     opp[i-1].value = result[i][0]; 
