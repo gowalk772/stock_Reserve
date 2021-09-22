@@ -34,12 +34,14 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   }
   
   let opp = []
-  opp[i] = document.createElement("option"); //option要素を新しく作る
-  opp[i].value = result[i+1][0]; //option要素の値に、メニューを識別できる番号を指定する
-  opp[i].text = result[i+1][0];
-  //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
-  endPeriod.appendChild(opp[i]); //セレクトボックスにoption要素を追加する
-  
+  for(let i = 1; i < result.length; i++){
+    opp[i-1] = document.createElement("option"); //option要素を新しく作る
+    opp[i-1].value = result[i][0]; //option要素の値に、メニューを識別できる番号を指定する
+    opp[i-1].text = result[i][0];
+    //option.innerHTML = menu; //ユーザー向けの表示としてメニュー名を指定する
+    endPeriod.appendChild(opp[i-1]); //セレクトボックスにoption要素を追加する
+  }
+
   alert(result.length);
 }
 
