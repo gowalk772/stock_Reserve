@@ -26,6 +26,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   let endPeriod = document.getElementById("ePeriod"); //積立開始月
 
   let op = []
+  op = []
   for(let i = 1; i <= result.length; i++){
     op[i-1] = document.createElement("option"); //option要素を新しく作る
     op[i-1].value = result[i][0]; 
@@ -34,6 +35,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   }
   
   let opp = []
+  opp = []
   for(let i = 1; i <= result.length; i++){
     opp[i-1] = document.createElement("option"); //option要素を新しく作る
     opp[i-1].value = result[i][0]; 
