@@ -24,11 +24,8 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 
   let startPeriod = document.getElementById("sPeriod"); //積立開始月
   let endPeriod = document.getElementById("ePeriod"); //積立開始月
-  for (let i = startPeriod.length - 1; 0 <= i; --i) {
-    if(!is[i].selected) {
-      select.removeChild(is[i]);
-    }
-  }
+  startPeriod.reset();
+  endPeriod.reset();
 
   let op = []
   for(let i = 1; i < result.length-1; i++){
