@@ -1,6 +1,7 @@
 let result = []; // 最終的な二次元配列を入れるための配列
 let startPeriod = document.getElementById("sPeriod"); //積立開始月
 let endPeriod = document.getElementById("ePeriod"); //積立開始月
+let price = document.getElementById("money");
 
 //CSVファイルを読み込む関数getCSV()の定義
 function getCSV(symbol){
@@ -65,6 +66,7 @@ cal.onclick = function(){
   if(ticker.value){
     alert(startPeriod.value);
     alert(endPeriod.value); 
+    alert(prive.value);
   }
   
 }
