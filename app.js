@@ -61,8 +61,11 @@ ticker.onchange = function(){
 
 let cal = document.getElementById("cal");
 cal.onclick = function(){
-  alert("計算");
-  result[1][0]; 
+  if(ticker.value){
+    alert("計算");
+    result[1][0]; 
+  }
+  
 }
 
 
