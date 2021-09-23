@@ -63,7 +63,7 @@ let cal = document.getElementById("cal");
 cal.onclick = function(){
   if(ticker.value){
     alert("計算");
-    result[1][0]; 
+    alert(result[1][0]); 
   }
   
 }
