@@ -1,4 +1,6 @@
 let result = []; // 最終的な二次元配列を入れるための配列
+let startPeriod = document.getElementById("sPeriod"); //積立開始月
+let endPeriod = document.getElementById("ePeriod"); //積立開始月
 
 //CSVファイルを読み込む関数getCSV()の定義
 function getCSV(symbol){
@@ -23,8 +25,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
       result[i] = tmp[i].split(',');
   }
 
-  let startPeriod = document.getElementById("sPeriod"); //積立開始月
-  let endPeriod = document.getElementById("ePeriod"); //積立開始月
+  
   let child;
   while(child = startPeriod.firstChild){ //セレクトボックスの子要素を取得しつつループ
     startPeriod.removeChild(child); //セレクトボックスから子要素を削除
@@ -62,8 +63,8 @@ ticker.onchange = function(){
 let cal = document.getElementById("cal");
 cal.onclick = function(){
   if(ticker.value){
-    alert("計算");
-    alert(result[1][0]); 
+    alert(startPeriod.value);
+    alert(endPeriod.value); 
   }
   
 }
