@@ -60,7 +60,7 @@ ticker.onchange = function(){
 }
 
 let cal = document.getElementById("cal");
-ticker.onclick = function(){
+cal.onclick = function(){
   alert("計算");
   result[1][0]; 
 }
