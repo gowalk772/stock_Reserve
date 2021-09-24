@@ -74,8 +74,16 @@ cal.onclick = function(){
         eRow = i;
       }
     }
-    if(sRow > eRow){
+    if(sRow < eRow){
       alert("期間を正しく選択してください")
+    } else{
+      let remainder = 0;
+      let dTotal = 0;
+      let sNumber = 0;
+      let sTNumber = 0;
+      
+
+
     }
     //alert(startPeriod.value);
     //alert(endPeriod.value); 
