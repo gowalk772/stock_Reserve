@@ -59,18 +59,23 @@ ticker.onchange = function(){
   getCSV(this.value);
 }
 
+let sRow;
+let eRow;
 let cal = document.getElementById("cal");
 cal.onclick = function(){
   if(ticker.value){
     for(let i = 0; i < result.length-1; i++){
       if(result[i][0] == startPeriod.value){
-        alert(result[i][1]);
+        sRow = i;
       }
     }
     for(let i = 0; i < result.length-1; i++){
       if(result[i][0] == endPeriod.value){
-        alert(result[i][1]);
+        eRow = i;
       }
+    }
+    if(sRow > eRow){
+      alert("期間を正しく選択してください")
     }
     //alert(startPeriod.value);
     //alert(endPeriod.value); 
