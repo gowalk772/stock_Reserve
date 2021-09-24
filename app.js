@@ -82,16 +82,19 @@ cal.onclick = function(){
       let dTotal = 0;
       let sNumber = 0;
       let sTNumber = 0;
+      //計算はドル
       for(let i = sRow; i > eRow; i--){
         dTotal = (price.value*100) + remainder;
         sNumber = parseInt(dTotal/result[i][1]);
         remainder = dTotal - (sNumber*result[i][1]);
         sTNumber = sNumber + sTNumber;
       }
+      //合計は円
       let total = price.value*10000*(sRow-eRow)
       alert(total);
       let valuation = sTNumber*result[eRow][1]*100;
       alert(valuation);
+      alert(remainder);
       alert(valuation-(total-remainder));
 
 
