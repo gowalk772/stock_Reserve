@@ -99,7 +99,7 @@ cal.onclick = function(){
       tot.textContent = total + " 円";
       val.textContent = valuation + " 円";
       pro.textContent = (valuation-(total-remainder*100)) + " 円";
-      prof.textContent = (valuation-(total-remainder*100))*0.717 + " 円";
+      prof.textContent = parseInt((valuation-(total-remainder*100))*0.717) + " 円";
 
 
     }
