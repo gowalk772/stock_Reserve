@@ -82,7 +82,7 @@ cal.onclick = function(){
       let sNumber = 0;
       let sTNumber = 0;
       for(let i = sRow; i > eRow; i--){
-        dTotal = (cal.value/100) + remainder;
+        dTotal = (price.value/100) + remainder;
         alert(dTotal);
       }
 
