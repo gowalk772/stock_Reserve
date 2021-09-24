@@ -85,7 +85,8 @@ cal.onclick = function(){
       for(let i = sRow; i > eRow; i--){
         dTotal = (price.value*100) + remainder;
         sNumber = parseInt(dTotal/result[i][1]);
-        alert(sNumber);
+        remainder = dTotal - (sNumber*result[i][1]);
+        alert(remainder);
       }
 
 
