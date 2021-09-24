@@ -86,11 +86,13 @@ cal.onclick = function(){
         dTotal = (price.value*100) + remainder;
         sNumber = parseInt(dTotal/result[i][1]);
         remainder = dTotal - (sNumber*result[i][1]);
-        alert(dTotal);
-        alert(sNumber);
-        alert(result[i][1]);
-        alert(remainder);
+        sTNumber = sNumber + sTNumber;
       }
+      let total = price.value*10000*(sRow-eRow)
+      alert(total);
+      let valuation = sTNumber*result[eRow][1];
+      alert(valuation);
+      alert(valuation-total);
 
 
     }
