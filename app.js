@@ -66,14 +66,15 @@ cal.onclick = function(){
   if(ticker.value){
     for(let i = 0; i < result.length-1; i++){
       if(result[i][0] == startPeriod.value){
-        sRow = i;
+        sRow = i; //開始期間の行を保存
       }
     }
     for(let i = 0; i < result.length-1; i++){
       if(result[i][0] == endPeriod.value){
-        eRow = i;
+        eRow = i; //終了期間の行を保存
       }
     }
+    //計算
     if(sRow < eRow){
       alert("期間を正しく選択してください")
     } else{
@@ -82,8 +83,9 @@ cal.onclick = function(){
       let sNumber = 0;
       let sTNumber = 0;
       for(let i = sRow; i > eRow; i--){
-        dTotal = (price.value/100) + remainder;
-        alert(dTotal);
+        dTotal = (price.value*100) + remainder;
+        sNumber = parseInt(dTotal/result[i][1]);
+        alert(sNumber);
       }
 
 
