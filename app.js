@@ -62,9 +62,19 @@ ticker.onchange = function(){
 let cal = document.getElementById("cal");
 cal.onclick = function(){
   if(ticker.value){
-    alert(startPeriod.value);
-    alert(endPeriod.value); 
-    alert(price.value);
+    for(let i = 0; i < result.length-1; i++){
+      if(result[i][0] == startPeriod.value){
+        alert(result[i][1]);
+      }
+    }
+    for(let i = 0; i < result.length-1; i++){
+      if(result[i][0] == endPeriod.value){
+        alert(result[i][1]);
+      }
+    }
+    //alert(startPeriod.value);
+    //alert(endPeriod.value); 
+    //alert(price.value);
   }
   
 }
