@@ -92,7 +92,7 @@ cal.onclick = function(){
       alert(total);
       let valuation = sTNumber*result[eRow][1]*100;
       alert(valuation);
-      alert(valuation-total);
+      alert(valuation-(total-remainder));
 
 
     }
