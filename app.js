@@ -90,7 +90,7 @@ cal.onclick = function(){
       }
       let total = price.value*10000*(sRow-eRow)
       alert(total);
-      let valuation = sTNumber*result[eRow][1];
+      let valuation = sTNumber*result[eRow][1]*100;
       alert(valuation);
       alert(valuation-total);
 
