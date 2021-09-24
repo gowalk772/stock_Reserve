@@ -90,11 +90,14 @@ cal.onclick = function(){
         sTNumber = sNumber + sTNumber;
       }
       //合計は円
-      let total = price.value*10000*(sRow-eRow)
-      alert(total);
-      let valuation = sTNumber*result[eRow][1]*100;
-      alert(valuation);
-      alert(valuation-(total-remainder*100));
+      let tot = document.getElementById("tot");
+      let val = document.getElementById("val");
+      let pro = document.getElementById("pro");
+      let prof = document.getElementById("prof");
+      tot.textContent = price.value*10000*(sRow-eRow) + " 円";
+      val.textContent = sTNumber*result[eRow][1]*100 + " 円";
+      pro.textContent = (valuation-(total-remainder*100)) + " 円";
+      prof.textContent = (valuation-(total-remainder*100))*71.7 + " 円";
 
 
     }

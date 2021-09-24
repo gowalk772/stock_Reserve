@@ -33,9 +33,7 @@
 
       <h1>米国株積立計算</h1>
       <br>
-      <div>
-        米国株を毎月決まった金額で積み立てたらいくらになるかを計算します。
-      </div>
+      <p>米国株を毎月決まった金額で積み立てたらいくらになるかを計算します。</p>
       <br>
       <h5>ティッカー</h5>
       <div class="col-auto">
@@ -45,8 +43,6 @@
           <option value="QQQ">QQQ</option>
         </select>
       </div>
-
-      <br>
       <br>
       <h5>積立開始年月</h5>
       <div class="cp_ipselect cp_sl02">
@@ -62,10 +58,7 @@
         </select>
       </div>
       <br>
-      <br>
-
-      <h5>積立金月額</h5>
-      <div class="input-group mb-3"></div>
+      <h5>毎月積立金額</h5>
         <input type="number" id="money" class="form-control" step="0.1" value="5.0" min="0" max="1000">
         <div class="input-group-append">
           <span class="input-group-text" id="basic-addon2">万円</span>
@@ -73,23 +66,25 @@
 
         <br>
         <a id="cal" class="btn btn-primary" role="button">計算</a>
-      </div>
 
       <br>
       <br>
       <h5>投資金額</h5>
-      <br>
+      <div id="tot"></div>
       <br>
       <h5>評価額</h5>
-      <br>
+      <div id="val"></div>
       <br>
       <h5>税引き前利益</h5>
-      <br>
+      <div id="pro"></div>
       <br>
       <h5>税引き後利益</h5>
+      <div id="prof"></div>
       <br>
       <br>
-      
+      <p>※ドル/円は100円で計算しています</p>
+      <p>※株の積み立ては月末に行う計算をしています</p>
+      <p>※手数料は考慮していません</p>
     </div>
   </div>
 
