@@ -96,10 +96,10 @@ cal.onclick = function(){
       let prof = document.getElementById("prof");
       let total = price.value*10000*(sRow-eRow);
       let valuation = sTNumber*result[eRow][1]*100;
-      tot.textContent = total + " 円";
-      val.textContent = valuation + " 円";
-      pro.textContent = (valuation-(total-remainder*100)) + " 円";
-      prof.textContent = parseInt((valuation-(total-remainder*100))*0.717) + " 円";
+      tot.textContent = total.toLocaleString() + " 円";
+      val.textContent = valuation.toLocaleString() + " 円";
+      pro.textContent = (valuation-(total-remainder*100)).toLocaleString() + " 円";
+      prof.textContent = parseInt((valuation-(total-remainder*100))*0.717).toLocaleString() + " 円";
 
 
     }
